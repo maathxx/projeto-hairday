@@ -8,6 +8,7 @@
     "server": "json-server --watch server.json --port 3333"
   },
   "dependencies": {
+    "dayjs": "^1.11.1",
     "json-server": "^1.0.0-alpha.21"
   },
   "devDependencies": {
