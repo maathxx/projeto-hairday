@@ -3,14 +3,16 @@
   "description": "Aplicação web para agendamento de corte de cabelo",
   "autor": "Matheus Farias de Oliveira",
   "scripts": {
-    "server": "json-server --watch server.json --port 3333",
-    "build": "webpack"
+    "build": "webpack",
+    "dev": "webpack serve",
+    "server": "json-server --watch server.json --port 3333"
   },
   "dependencies": {
     "json-server": "^1.0.0-alpha.21"
   },
   "devDependencies": {
     "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }
