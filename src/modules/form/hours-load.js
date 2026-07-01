@@ -29,6 +29,22 @@ export function hoursLoad({ date }) {
         li.classList.add(available ? "hour-available" : "hour-unavailable")
 
         li.textContent = hour
+
+            if(hour === 9){
+                hourHeaderAdd("Manhã")
+            }else if(hour === 12){
+                hourHeaderAdd("Tarde")
+            }else if(hour === 18){
+                hourHeaderAdd("Noite")
+            }
+
         hours.append(li)
     })
+}
+
+function hourHeaderAdd(tittle) {
+    const header = document.createElement("li")
+    header.classList.add("hour-period")
+    header.textContent = tittle
+    hours.append(header)
 }
